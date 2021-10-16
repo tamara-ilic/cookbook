@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a,
+h1,
+h2,
+h4,
+h5,
+.table-heading {
+  font-family: "Birthstone", cursive;
+}
+
+.main-intro h1 span {
+  font-size: 1.3em;
+}
+
+h1 {
+  margin-bottom: 0.8em;
+}
+
+.bg {
+  background-image: url(images/banner.jpg);
+  position: relative;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.bg-col {
+  background-color: #f6be2d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bg-c {
+  background-color: #f6be2d;
+}
+
+body {
+  padding: 10px;
+}
+
+#recipe-section {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 133px;
+}
+
+.main-intro {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  text-align: center;
+}
+
+p,
+.main-intro > p span,
+.btn {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h5 {
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 2em;
+  letter-spacing: 1.5px;
+}
+
+h1 span,
+p span {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.learn-more,
+.send {
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 0.8em;
+  letter-spacing: 1.5px;
+  margin-top: 1em;
+  padding: 0.8em 1em;
+}
+
+.learn-more {
+  margin-bottom: 2.5em;
+}
+
+.card {
+  margin: 2%;
+}
+
+.homepage-description {
+  margin: 1.875em;
+}
+
+th.table-heading {
+  width: 15%;
+}
+
+.instructions tbody > tr {
+  height: 100px;
+}
+
+td:nth-of-type(odd) {
+  text-align: right;
+}
+
+.nutrition {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+footer img {
+  height: auto;
+  margin: 5%;
+}
+
+img.socials {
+  width: 10%;
+}
+
+.img-thumbnail {
+  max-height: 200px;
+}
+
+.form-control {
+  margin-bottom: 2em;
+}
+.send {
+  color: white;
+}
+/* Create new styles for navbar*/
+.header {
+  border-bottom: 1px solid #f6be2d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #a78686;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: #5c5397;
+}
+
+/* Navbar dropdown styles  */
+li.dropdown,
+.dropbtn {
+  display: inline-block;
+}
+
+.dropdown:hover .dropbtn {
+  border-bottom: 3px solid red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 8em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #c6e223;
+}
+
+/*Media quries to make navbar responsive*/
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 1 10px 27px rgb(41, 38, 38);
+    z-index: 100;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  /* Link style only when menu is open  */
+  .nav-menu.active li a {
+    color: white;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+    color: white;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
