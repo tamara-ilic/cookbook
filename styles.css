@@ -87,18 +87,14 @@ p span {
   background: rgba(0, 0, 0, 0.75);
 }
 
-.learn-more,
-.send {
+.learn-more {
   background-color: black;
   border: 3px solid white;
   border-radius: 0.8em;
   letter-spacing: 1.5px;
+  margin-bottom: 2.5em;
   margin-top: 1em;
   padding: 0.8em 1em;
-}
-
-.learn-more {
-  margin-bottom: 2.5em;
 }
 
 .card {
@@ -150,9 +146,7 @@ img.socials {
 .form-control {
   margin-bottom: 2em;
 }
-.send {
-  color: white;
-}
+
 /* Create new styles for navbar*/
 .header {
   border-bottom: 1px solid #f6be2d;
