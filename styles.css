@@ -69,6 +69,7 @@ p,
 .main-intro > p span,
 .btn {
   font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
 }
 
 h1,
