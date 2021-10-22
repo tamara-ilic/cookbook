@@ -1,8 +1,3 @@
-/*var pressedButton = document.getElementById("share-button");
-pressedButton.addEventListener("click", function (event) {
-   alert("Show some love on socials!")
-})*/
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -21,3 +16,8 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+var pressedButton = document.getElementById("share-button");
+pressedButton.addEventListener("click", function (event) {
+  alert("Show some love on socials!");
+});
