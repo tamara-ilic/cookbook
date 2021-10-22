@@ -1,7 +1,3 @@
-/*var pressedButton = document.getElementById("share-button");
-pressedButton.addEventListener("click", function (event) {
-   alert("Show some love on socials!")
-})*/
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -20,4 +16,11 @@ navLink.forEach((n) => n.addEventListener("click", closeMenu));
 function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
+}
+
+const pressedButton = document.querySelectorAll('.share-button');
+pressedButton.forEach(n => n.addEventListener('click', message));
+
+function message(){
+alert('Show Some Love On Social!!!');
 }
